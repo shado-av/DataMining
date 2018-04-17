@@ -1,0 +1,54 @@
+This repository includes the data distrubtion of task arrival times and task durations. These distributions ares calculated using ARENA Simulation Software. 
+
+The data was collected and analyzed from three days that are categorized as following:
+(1) January 17, 2018 is considered BUSY
+(2) January 20, 2018 is considered SLOW
+(3) January 22, 2018 is considered AVERAGE 
+
+Each day is broken down into the following shifts:
+  -- Shift 1 (6 A.M. to 2 P.M.) 
+  -- Shift 2 (2 P.M. to 10 P.M.)
+  -- Shift 3 (10 P.M. to 6 A.M.)
+
+Data distributions are organized by type of task, the day from which the tasks occurred, and the shift in which the tasks occured. The spreadsheets are organized by day and type of task, and are colored by which shifts the task occured in,
+
+On the spreadsheets holding raw data and calculations in this repository, the shifts are marked as the following:
+  -- Light purple == Shift 3 of previous day
+  -- Light blue == Shift 1 of current day
+  -- Medium blue == Shift 2 of current day
+  -- Darkest blue == Shift 3 of current/next day
+  
+This repository includes the distrubutions of the arrivals following Tasks:
+
+(1) Record Keeping Tasks
+  -- Weather conditions are recorded at 6 hour intervals
+(2) Actuation Tasks
+  -- Route trains and other moving track vehicles
+  -- Open/close railroad bridges
+(3) Issuing bulletins
+  -- Recording changes in temporary bulletins
+
+Arrival of tasks is measured in minutes.
+
+---------------------------
+Task Durations Assumptions:
+
+(1) Record Keeping Tasks
+
+Weather Task Duration
+-- 10 seconds per city * 17 cities = 170 seconds per task
+
+
+(2) Actuation Tasks
+
+OK Task Duraion
+-- uniform distribution between 2-3 minutes.
+
+CLEAR Task Duration
+-- Triangular distribution (60, 45, 75 seconds)
+
+
+(3) Operating Bulletin Tasks
+
+DOB Task Duration
+-- uniform distribution (1,3 minutes)
