@@ -1,28 +1,41 @@
 Arena 1 Dispatcher Simulation Utilization Results 
 
-1/17/18
-Day 1 (Busy):
-Shift 0: .02209841
-Shift 1: .0980
-Shift 2: .05950615
-Shift 3: .00824362
-Shift 0+3: .02059438
+Day 1 Shift 0:
+Day 1 Shift 1:
+Day 1 Shift 2:
+Day 1 Shift 3:
+Day 1 Shift 0+3:
 
-1/20/18
-Day 2 (Slow):
-Shift 0: .00703374
-Shift 1: .01685658
-Shift 2: .01414138
-Shift 3: .00759861
-Shift 0+3: .01256331
+Day 2 Shift 0:
+Day 2 Shift 1:
+Day 2 Shift 2:
+Day 2 Shift 3:
+Day 2 Shift 0+3:
 
-1/22/18 
-Day 3 (Average):
-Shift 0: .01906034
-Shift 1: .06224884
-Shift 2: .04084114
-Shift 3: .00388633
-Shift 0+3: .0230347
+Day 3 Shift 0:
+Day 3 Shift 1:
+Day 3 Shift 2:
+Day 3 Shift 3:
+Day 3 Shift 0+3:
 
+Railroad Recordkeeping Utilizations:
+
+Day 1 Shift 0:
+Day 1 Shift 1:
+Day 1 Shift 2:
+Day 1 Shift 3:
+Day 1 Shift 0+3:
+
+Day 2 Shift 0:
+Day 2 Shift 1:
+Day 2 Shift 2:
+Day 2 Shift 3:
+Day 2 Shift 0+3:
+
+Day 3 Shift 0:
+Day 3 Shift 1:
+Day 3 Shift 2:
+Day 3 Shift 3:
+Day 3 Shift 0+3:
 
 
