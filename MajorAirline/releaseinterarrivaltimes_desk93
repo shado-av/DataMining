@@ -1,0 +1,19 @@
+
+
+=================================================================
+
+
+Data File: C:\Users\v\Documents\Delta times\releaseinterarrivaltimes_desk93.txt
+
+
+Function       Sq Error
+-----------------------
+Erlang         0.00341
+Exponential    0.00341
+Weibull        0.00431
+Beta           0.0618
+Gamma          0.0629
+Lognormal      0.17
+Normal         0.283
+Triangular     0.53
+Uniform        0.631
