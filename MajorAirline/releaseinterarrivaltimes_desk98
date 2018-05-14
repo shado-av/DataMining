@@ -1,35 +1,67 @@
-
-	Distribution Summary
-
-Distribution:	Beta         
-Expression:	-0.5 + 76 * BETA(0.273, 1.79)
-Square Error:	0.046002
-
-Chi Square Test
-  Number of intervals	= 6
-  Degrees of freedom 	= 3
-  Test Statistic     	= 7.35
-  Corresponding p-value	= 0.0649
-
-	Data Summary
-
-Number of Data Points	= 48
-Min Data Value       	= 0
-Max Data Value       	= 75
-Sample Mean          	= 9.58
-Sample Std Dev       	= 14.7
-
-	Histogram Summary
-
-Histogram Range    	= -0.5 to 75.5
-Number of Intervals	= 76
-
-
-==================================================================
-Int.   No. of               Probability           Cumulative      
-No.    Data Pts.   x        Density               Distribution    
-------------------------------------------------------------------
-                            Data   Function       Data   Function   
+
+
+	Distribution Summary
+
+
+
+Distribution:	Beta         
+
+Expression:	-0.5 + 76 * BETA(0.273, 1.79)
+
+Square Error:	0.046002
+
+
+
+Chi Square Test
+
+  Number of intervals	= 6
+
+  Degrees of freedom 	= 3
+
+  Test Statistic     	= 7.35
+
+  Corresponding p-value	= 0.0649
+
+
+
+	Data Summary
+
+
+
+Number of Data Points	= 48
+
+Min Data Value       	= 0
+
+Max Data Value       	= 75
+
+Sample Mean          	= 9.58
+
+Sample Std Dev       	= 14.7
+
+
+
+	Histogram Summary
+
+
+
+Histogram Range    	= -0.5 to 75.5
+
+Number of Intervals	= 76
+
+
+
+
+
+==================================================================
+
+Int.   No. of               Probability           Cumulative      
+
+No.    Data Pts.   x        Density               Distribution    
+
+------------------------------------------------------------------
+
+                            Data   Function       Data   Function   
+
    0    21      0.000      0.438      0.309      0.438      0.309
    1     0       1.00      0.000     0.0785      0.438      0.387
    2     2       2.00     0.0417     0.0527      0.479      0.440
@@ -111,11 +143,16 @@ No.    Data Pts.   x        Density               Distribution
 =================================================================
 
 
-Data File: C:\Users\v\Documents\Delta times\releaseinterarrivaltimes_desk95.txt
-
-
-Function       Sq Error
------------------------
+Data File: C:\Users\v\Documents\Delta times\releaseinterarrivaltimes_desk95.txt
+
+
+
+
+
+Function       Sq Error
+
+-----------------------
+
 Beta           0.046
 Weibull        0.0732
 Lognormal      0.08
@@ -126,38 +163,70 @@ Normal         0.198
 Triangular     0.202
 Uniform        0.212
 Poisson        0.287
-
-	Distribution Summary
-
-Distribution:	Lognormal    
-Expression:	-0.5 + LOGN(13.1, 55.3)
-Square Error:	0.080044
-
-Chi Square Test
-  Number of intervals	= 6
-  Degrees of freedom 	= 3
-  Test Statistic     	= 30.7
-  Corresponding p-value	< 0.005
-
-	Data Summary
-
-Number of Data Points	= 48
-Min Data Value       	= 0
-Max Data Value       	= 75
-Sample Mean          	= 9.58
-Sample Std Dev       	= 14.7
-
-	Histogram Summary
-
-Histogram Range    	= -0.5 to 75.5
-Number of Intervals	= 76
-
-
-==================================================================
-Int.   No. of               Probability           Cumulative      
-No.    Data Pts.   x        Density               Distribution    
-------------------------------------------------------------------
-                            Data   Function       Data   Function   
+
+
+	Distribution Summary
+
+
+
+Distribution:	Lognormal    
+
+Expression:	-0.5 + LOGN(13.1, 55.3)
+
+Square Error:	0.080044
+
+
+
+Chi Square Test
+
+  Number of intervals	= 6
+
+  Degrees of freedom 	= 3
+
+  Test Statistic     	= 30.7
+
+  Corresponding p-value	< 0.005
+
+
+
+	Data Summary
+
+
+
+Number of Data Points	= 48
+
+Min Data Value       	= 0
+
+Max Data Value       	= 75
+
+Sample Mean          	= 9.58
+
+Sample Std Dev       	= 14.7
+
+
+
+	Histogram Summary
+
+
+
+Histogram Range    	= -0.5 to 75.5
+
+Number of Intervals	= 76
+
+
+
+
+
+==================================================================
+
+Int.   No. of               Probability           Cumulative      
+
+No.    Data Pts.   x        Density               Distribution    
+
+------------------------------------------------------------------
+
+                            Data   Function       Data   Function   
+
    0    21      0.000      0.438      0.261      0.438      0.261
    1     0       1.00      0.000      0.146      0.438      0.406
    2     2       2.00     0.0417     0.0934      0.479      0.500
