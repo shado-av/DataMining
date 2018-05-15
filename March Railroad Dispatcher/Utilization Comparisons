@@ -1,10 +1,10 @@
 Arena 1 Dispatcher Simulation Utilization Results 
 
-Day 1 Shift 0:
-Day 1 Shift 1:
-Day 1 Shift 2:
-Day 1 Shift 3:
-Day 1 Shift 0+3:
+Day 1 Shift 0: 0.0586575
+Day 1 Shift 1: 0.2260
+Day 1 Shift 2: 0.0961
+Day 1 Shift 3: 0.026246
+Day 1 Shift 0+3: 0.06247234
 
 Day 2 Shift 0:
 Day 2 Shift 1:
@@ -20,22 +20,22 @@ Day 3 Shift 0+3:
 
 Railroad Recordkeeping Utilizations:
 
-Day 1 Shift 0:
-Day 1 Shift 1:
-Day 1 Shift 2:
-Day 1 Shift 3:
-Day 1 Shift 0+3:
+Day 1 Shift 0: 52/480 = 0.10833
+Day 1 Shift 1: 202/480 = 0.4208333
+Day 1 Shift 2: 98/480 = 0.2041666667
+Day 1 Shift 3: 9/480 = 0.01875
+Day 1 Shift 0+3: 61/480 = 0.1270833
 
-Day 2 Shift 0:
-Day 2 Shift 1:
-Day 2 Shift 2:
-Day 2 Shift 3:
-Day 2 Shift 0+3:
+Day 2 Shift 0: 20/480 = 0.04166666667
+Day 2 Shift 1: 214/480 = 0.4458333333
+Day 2 Shift 2: 89/240 = 0.3708333333
+Day 2 Shift 3: 2/480 = 0.00416666
+Day 2 Shift 0+3: 22/480 = 0.04583333333
 
-Day 3 Shift 0:
-Day 3 Shift 1:
-Day 3 Shift 2:
-Day 3 Shift 3:
-Day 3 Shift 0+3:
+Day 3 Shift 0: 16/480 = 0.054166666
+Day 3 Shift 1: 75/480 = 0.15625
+Day 3 Shift 2: 76/480 = 0.1583333
+Day 3 Shift 3: 3/480 = 0.00625
+Day 3 Shift 0+3: 19/480 = 0.03958333
 
 
