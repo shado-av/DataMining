@@ -52,6 +52,17 @@ CLEAR Task Duration
 
 DOB Task Duration
 -- uniform distribution (1,3 minutes)
+
+----------------------------------------------------------------------------
+Arena simulations model the incoming of tasks with specified distributions and resource capacities. 
+
+The distribution are all exponential distributions using the schedule feature on Arena, where the mean values inputs come
+from the input analyzer results also from Arena. All mean values were converted from minutes between task to task per hour.  
+If there were no tasks of a specific type during a shift, it was assumed that the mean of the exponential probability 
+distribution was 1 task per 1.5*length of simulation (in hours). 
+
+
+
 //\\
 20180514 MajorAirline folder added to repository
 //Files include .txt, .dft, and Input Analyzer summaries.  
