@@ -1,0 +1,86 @@
+Desk, Number of Flights, Interarrival Time Distribution
+Desk 3,10.000000, Exponential(6)
+Desk 4,8.000000, Exponential(4)
+Desk 44,13.000000, Exponential(11.25)
+Desk 45,21.000000, Exponential(5.65)
+Desk 46,7.000000, Lognormal(2.0904;0.88287)
+Desk 47,14.000000, Lognormal(1.5144;1.0285)
+Desk 48,21.000000, Lognormal(1.5059;0.83237)
+Desk 49,10.000000, Lognormal(1.5951;1.132)
+Desk 5,5.000000, Lognormal(2.4509;1.1792)
+Desk 56,9.000000, Lognormal(2.1192;1.1948)
+Desk 57,12.000000, Exponential(8.6364)
+Desk 58,18.000000, Exponential(4.6471)
+Desk 59,6.000000, Triangular(5;5;63)
+Desk 61,11.000000, Exponential(5.6)
+Desk 62,15.000000, Exponential(11.5)
+Desk 63,15.000000, Exponential(4.8571)
+Desk 64,4.000000, Invalid Distribution: 4 tasks occurred
+Desk 65,0.000000, Invalid Distribution: 0 tasks occurred
+Desk 66,0.000000, Invalid Distribution: 0 tasks occurred
+Desk 67,10.000000, Triangular(0;7;13)
+Desk 68,7.000000, Lognormal(2.0768;1.132)
+Desk 69,4.000000, Invalid Distribution: 4 tasks occurred
+Desk 7,6.000000, Lognormal(2.0536;1.6574)
+Desk 70,2.000000, Invalid Distribution: 2 tasks occurred
+Desk 71,2.000000, Invalid Distribution: 2 tasks occurred
+Desk 72,0.000000, Invalid Distribution: 0 tasks occurred
+Desk 73,5.000000, Lognormal(2.567;0.99553)
+Desk 74,0.000000, Invalid Distribution: 0 tasks occurred
+Desk 75,11.000000, Lognormal(2.4515;0.64296)
+Desk 76,19.000000, Exponential(8.6667)
+Desk 77,18.000000, Exponential(9.7059)
+Desk 78,5.000000, Exponential(16.25)
+Desk 79,11.000000, Lognormal(1.5772;1.1394)
+Desk 8,12.000000, Exponential(7)
+Desk 80,7.000000, Lognormal(1.459;1.1565)
+Desk 81,1.000000, Invalid Distribution: 1 tasks occurred
+Desk 82,2.000000, Invalid Distribution: 2 tasks occurred
+Desk 83,2.000000, Invalid Distribution: 2 tasks occurred
+Desk 84,0.000000, Invalid Distribution: 0 tasks occurred
+Desk 85,5.000000, Exponential(5.25)
+Desk 86,0.000000, Invalid Distribution: 0 tasks occurred
+Desk 87,5.000000, Exponential(12.5)
+Desk 88,5.000000, Triangular(11;11;58)
+Desk 89,0.000000, Invalid Distribution: 0 tasks occurred
+Desk 9,13.000000, Exponential(8.0833)
+Desk 90,9.000000, Triangular(0;6;27)
+Desk 91,0.000000, Invalid Distribution: 0 tasks occurred
+Desk 92,0.000000, Invalid Distribution: 0 tasks occurred
+Desk 93,0.000000, Invalid Distribution: 0 tasks occurred
+Desk 94,0.000000, Invalid Distribution: 0 tasks occurred
+Desk 95,0.000000, Invalid Distribution: 0 tasks occurred
+Desk 96,3.000000, Invalid Distribution: 3 tasks occurred
+Desk 97,18.000000, Exponential(6.3529)
+Desk 98,7.000000, Exponential(14.5)
+Desk 99,6.000000, Lognormal(1.4042;1.0965)
+Desk E1,10.000000, Lognormal(2.2753;1.1346)
+Desk M81,0.000000, Invalid Distribution: 0 tasks occurred
+Desk M82,0.000000, Invalid Distribution: 0 tasks occurred
+Desk M83,0.000000, Invalid Distribution: 0 tasks occurred
+Desk M84,0.000000, Invalid Distribution: 0 tasks occurred
+Desk M85,0.000000, Invalid Distribution: 0 tasks occurred
+Desk M86,0.000000, Invalid Distribution: 0 tasks occurred
+Desk M87,0.000000, Invalid Distribution: 0 tasks occurred
+Desk P1,0.000000, Invalid Distribution: 0 tasks occurred
+Desk P3,1.000000, Invalid Distribution: 1 tasks occurred
+Desk P44,0.000000, Invalid Distribution: 0 tasks occurred
+Desk P45,0.000000, Invalid Distribution: 0 tasks occurred
+Desk P46,5.000000, Lognormal(2.5292;0.32044)
+Desk P47,3.000000, Invalid Distribution: 3 tasks occurred
+Desk P5,1.000000, Invalid Distribution: 1 tasks occurred
+Desk P56,0.000000, Invalid Distribution: 0 tasks occurred
+Desk P57,3.000000, Invalid Distribution: 3 tasks occurred
+Desk P58,0.000000, Invalid Distribution: 0 tasks occurred
+Desk P59,0.000000, Invalid Distribution: 0 tasks occurred
+Desk P61,0.000000, Invalid Distribution: 0 tasks occurred
+Desk P62,0.000000, Invalid Distribution: 0 tasks occurred
+Desk P7,0.000000, Invalid Distribution: 0 tasks occurred
+Desk P75,0.000000, Invalid Distribution: 0 tasks occurred
+Desk P76,0.000000, Invalid Distribution: 0 tasks occurred
+Desk P77,0.000000, Invalid Distribution: 0 tasks occurred
+Desk P79,3.000000, Invalid Distribution: 3 tasks occurred
+Desk P8,10.000000, Exponential(10.6667)
+Desk P88,0.000000, Invalid Distribution: 0 tasks occurred
+Desk P97,2.000000, Invalid Distribution: 2 tasks occurred
+Desk P99,0.000000, Invalid Distribution: 0 tasks occurred
