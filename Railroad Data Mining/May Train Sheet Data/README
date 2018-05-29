@@ -1,0 +1,28 @@
+This folder includes matlab files used to mine data from a railroad company as well as 
+calculate the best statistcal distributions of the data sets.
+---------------------------------------------------------------------------------------------
+
+RailroadDataMining.m 
+- Matlab script which reads in an excel file and extracts the relevant times of the tasks performed. 
+- In our case we extracted the OK and CLEAR task times
+- Outputs the interarrival times of each task 
+- Calculates the best distribution of the data file, using function DistributionFitter.m
+- Outputs file of distribution best fit for each shift for each task, as well as the data historgrams
+
+
+----------------------------------------------------------------------------------------------
+
+RailroadDistributionFitter.m
+- Matlab function which takes in a discrete (integer only) data set as an array, a task type string, and a shift number string
+- Calculates the 4 distributions: uniform, triangular, exponential, and lognormal and the standard error of each
+- Compares the standard error of each distribution and chooses best fit distribution based on the lowest error
+- Outputs error, distribution, histogram figure, and valid (boolean)
+- Valid will be 1 unless there are less than 5 data points, such that the distribution will be considered invalid (v=0)
+
+
+----------------------------------------------------------------------------------------------
+
+Includes folders that contain both the data extracted from the original spreadsheet and the histograms plotted with
+the best fit model for each data set in the data folder.
+
+Includes a .csv file that lists the best fit distributions for each task by shift number.
