@@ -11,17 +11,17 @@ clear;clf
 OKresult_cell = {};
 CLEARresult_cell = {};
 
-fileID1 = fopen('May16Distributions.csv', 'w');
+fileID1 = fopen('May20Distributions.csv', 'w');
 
 fprintf(fileID1,'Shift, OK Time Distributsion, Clear Time Distribution\n');
 
 
-table = readtable('TRACK WARRANTS 05-16-18.xlsx');
+table = readtable('TRACK WARRANTS 05-20-18.xlsx');
 table_num = size(table,1);
 
 OKtimeOrig = table.OKTime;
 CLEARtimeOrig = table.ClearedAt;
-Day=16;
+Day=20;
 Month= 'May';
 j=1;
 
@@ -70,33 +70,51 @@ CLEARtemp = [CLEARtimes;0] - [0;CLEARtimes];
 CLEARresult = CLEARtemp(2:size(CLEARtemp,1)-1,:) * 1440;
 CLEARresult_cell = cat(2,CLEARresult_cell, CLEARresult);
 
-CLEARshift0=CLEARresult(1:CLEARs0_num-1);
-CLEARshift1=CLEARresult(CLEARs0_num:CLEARs0_num+CLEARs1_num-1);
-CLEARshift2=CLEARresult(CLEARs1_num:CLEARs1_num+CLEARs2_num-1);
-CLEARshift3=CLEARresult(CLEARs2_num:CLEARs2_num+CLEARs3_num-1);
-CLEARshift03=[CLEARshift3; CLEARshift0];
+if CLEARs0_num==0
+    CLEARshift0=[];
+    CLEARshift1=CLEARresult(1:CLEARs1_num-1);
+    CLEARshift2=CLEARresult(CLEARs1_num:CLEARs1_num+CLEARs2_num-1);
+    CLEARshift3=CLEARresult(CLEARs2_num:CLEARs2_num+CLEARs3_num-1);
+    CLEARshift03=[CLEARshift3; CLEARshift0];
+else
+    CLEARshift0=CLEARresult(1:CLEARs0_num-1);
+    CLEARshift1=CLEARresult(CLEARs0_num:CLEARs0_num+CLEARs1_num-1);
+    CLEARshift2=CLEARresult(CLEARs1_num:CLEARs1_num+CLEARs2_num-1);
+    CLEARshift3=CLEARresult(CLEARs2_num:CLEARs2_num+CLEARs3_num-1);
+    CLEARshift03=[CLEARshift3; CLEARshift0];
+end
 s=0;
 while(s<5)
     if s==0
         OKdata=OKshift0;
         CLEARdata=CLEARshift0;
         shift='Shift_0';
+        num1=OKs0_num;
+        num2=CLEARs0_num;
     elseif s==1
         OKdata=OKshift1;
         CLEARdata=CLEARshift1;
         shift='Shift_1';
+        num1=OKs1_num;
+        num2=CLEARs1_num;
     elseif s==2
         OKdata=OKshift2;
         CLEARdata=CLEARshift2;
         shift='Shift_2';
+        num1=OKs2_num;
+        num2=CLEARs2_num;
     elseif s==3
         OKdata=OKshift3;
         CLEARdata=CLEARshift3;
         shift='Shift_3';
+        num1=OKs3_num;
+        num2=CLEARs3_num;
     elseif s==4
         OKdata=OKshift03;
         CLEARdata=CLEARshift03;
         shift='Shift_03';
+        num1=OKs0_num+OKs3_num;
+        num2=CLEARs0_num+CLEARs3_num;
         
     end
     
@@ -105,13 +123,22 @@ while(s<5)
     CLRfigname=strcat('Figures/CLEAR_Distribution_',shift);
     CLRfilename=strcat('Data/CLEAR_interarrival_times_',shift);
     
+    if isempty(OKdata)
+        OKdata(1)=NaN;
+    end
+    
+    if isempty(CLEARdata)
+        CLEARdata(1)=NaN;
+    end
+    
+    
     xlswrite(OKfilename, OKdata);
     xlswrite(CLRfilename, CLEARdata);
     
     [e1,d1,f1,v]=RailroadDistributionFitter('OK',shift, round(OKdata));
     
     if ~v
-        fprintf(fileID1,'%s,Invalid Distribution: %d tasks occurred,',shift,length(OKdata)+1);
+        fprintf(fileID1,'%s,Invalid Distribution: %d tasks occurred,',shift,num1);
     else
         print(OKfigname,'-djpeg')
         fprintf(fileID1,'%s,%s,',shift,d1);
@@ -119,7 +146,7 @@ while(s<5)
     [e2,d2,f2,v]=RailroadDistributionFitter('CLEAR',shift, round(CLEARdata));
     
     if ~v
-        fprintf(fileID1,'Invalid Distribution: %d tasks occurred\n',length(CLEARdata)+1);
+        fprintf(fileID1,'Invalid Distribution: %d tasks occurred\n',num2);
     else
         print(CLRfigname,'-djpeg')
         fprintf(fileID1,'%s\n',d2);
