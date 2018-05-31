@@ -1,0 +1,6 @@
+Shift, OK Time Distributsion, Clear Time Distribution
+Shift_0,Lognormal(3.3281;1.3956),Invalid Distribution: 1 tasks occurred
+Shift_1,Lognormal(2.029;0.99727),Lognormal(2.3493;1.2899)
+Shift_2,Lognormal(2.8175;0.99565),Lognormal(2.1974;1.1925)
+Shift_3,Invalid Distribution: 1 tasks occurred,Lognormal(3.5743;1.6376)
+Shift_03,Exponential(50.5),Lognormal(3.5743;1.6376)

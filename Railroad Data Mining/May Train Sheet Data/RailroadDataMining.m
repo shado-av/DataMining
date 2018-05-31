@@ -11,18 +11,18 @@ clear;clf
 OKresult_cell = {};
 CLEARresult_cell = {};
 
-fileID1 = fopen('May20Distributions.csv', 'w');
+fileID1 = fopen('March14Distributions.csv', 'w');
 
 fprintf(fileID1,'Shift, OK Time Distributsion, Clear Time Distribution\n');
 
 
-table = readtable('TRACK WARRANTS 05-20-18.xlsx');
+table = readtable('TRACK WARRANTS 03-14-18.xlsx');
 table_num = size(table,1);
 
 OKtimeOrig = table.OKTime;
 CLEARtimeOrig = table.ClearedAt;
-Day=20;
-Month= 'May';
+Day=14;
+Month= 'March';
 j=1;
 
 for i=1:table_num
@@ -59,11 +59,19 @@ OKtemp = [OKtimes;0] - [0;OKtimes];
 OKresult = OKtemp(2:size(OKtemp,1)-1,:) * 1440;
 OKresult_cell = cat(2,OKresult_cell, OKresult);
 
-OKshift0=OKresult(1:OKs0_num-1);
-OKshift1=OKresult(OKs0_num:OKs0_num+OKs1_num-1);
-OKshift2=OKresult(OKs1_num:OKs1_num+OKs2_num-1);
-OKshift3=OKresult(OKs2_num:OKs2_num+OKs3_num-1);
-OKshift03=[OKshift3; OKshift0];
+if OKs0_num==0
+    OKshift0=[];
+    OKshift1=OKresult(1:OKs1_num-1);
+  	OKshift2=OKresult(OKs1_num:OKs1_num+OKs2_num-1);
+    OKshift3=OKresult(OKs1_num+OKs2_num:OKs1_num+OKs2_num+OKs3_num-1);
+    OKshift03=[OKshift3; OKshift0];
+else
+    OKshift0=OKresult(1:OKs0_num-1);
+    OKshift1=OKresult(OKs0_num:OKs0_num+OKs1_num-1);
+    OKshift2=OKresult(OKs0_num+OKs1_num:OKs0_num+OKs1_num+OKs2_num-1);
+    OKshift3=OKresult(OKs0_num+OKs1_num+OKs2_num:OKs0_num+OKs1_num+OKs2_num+OKs3_num-1);
+    OKshift03=[OKshift3; OKshift0];
+end
 
 
 CLEARtemp = [CLEARtimes;0] - [0;CLEARtimes];
@@ -74,13 +82,13 @@ if CLEARs0_num==0
     CLEARshift0=[];
     CLEARshift1=CLEARresult(1:CLEARs1_num-1);
     CLEARshift2=CLEARresult(CLEARs1_num:CLEARs1_num+CLEARs2_num-1);
-    CLEARshift3=CLEARresult(CLEARs2_num:CLEARs2_num+CLEARs3_num-1);
+    CLEARshift3=CLEARresult(CLEARs1_num+CLEARs2_num:CLEARs1_num+CLEARs2_num+CLEARs3_num-1);
     CLEARshift03=[CLEARshift3; CLEARshift0];
 else
     CLEARshift0=CLEARresult(1:CLEARs0_num-1);
     CLEARshift1=CLEARresult(CLEARs0_num:CLEARs0_num+CLEARs1_num-1);
-    CLEARshift2=CLEARresult(CLEARs1_num:CLEARs1_num+CLEARs2_num-1);
-    CLEARshift3=CLEARresult(CLEARs2_num:CLEARs2_num+CLEARs3_num-1);
+    CLEARshift2=CLEARresult(CLEARs0_num+CLEARs1_num:CLEARs0_num+CLEARs1_num+CLEARs2_num-1);
+    CLEARshift3=CLEARresult(CLEARs0_num+CLEARs1_num+CLEARs2_num:CLEARs0_num+CLEARs1_num+CLEARs2_num+CLEARs3_num-1);
     CLEARshift03=[CLEARshift3; CLEARshift0];
 end
 s=0;
@@ -118,10 +126,10 @@ while(s<5)
         
     end
     
-    OKfigname=strcat('Figures/OK_Distribution_',shift);
-    OKfilename=strcat('Data/OK_interarrival_times_',shift);
-    CLRfigname=strcat('Figures/CLEAR_Distribution_',shift);
-    CLRfilename=strcat('Data/CLEAR_interarrival_times_',shift);
+    OKfigname=strcat('3-14-18 Figures/OK_Distribution_',shift);
+    OKfilename=strcat('3-14-18 Data/OK_interarrival_times_',shift);
+    CLRfigname=strcat('3-14-18 Figures/CLEAR_Distribution_',shift);
+    CLRfilename=strcat('3-14-18 Data/CLEAR_interarrival_times_',shift);
     
     if isempty(OKdata)
         OKdata(1)=NaN;
