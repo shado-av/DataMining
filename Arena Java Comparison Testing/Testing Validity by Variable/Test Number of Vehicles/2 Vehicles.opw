@@ -1,0 +1,27 @@
+[RESOURCES]
+Attention
+[VARIABLES]
+Actuation OK.NumberOut
+NotUsed.NumberOut
+Process_DOB.NumberOut
+Process_DOB.NumberIn
+Process_Clear.NumberOut
+Process_OK.NumberOut
+Process_Clear.NumberIn
+Dispose 1.NumberOut
+Process_WeatherRecording.NumberOut
+Process_WeatherRecording.NumberIn
+Dispatch seize resource.NumberOut
+DOB.NumberOut
+Actuation CLEAR.NumberOut
+NotUsed3.NumberOut
+NotUsed2.NumberOut
+NotUsed3.NumberIn
+NotUsed2.NumberIn
+NotUsed.NumberIn
+Process_OK.NumberIn
+Task7_notUsed.NumberOut
+Task6_notUsed.NumberOut
+Task5_notUSed.NumberOut
+Task4_notUsed.NumberOut
+Dispatch seize resource.NumberIn

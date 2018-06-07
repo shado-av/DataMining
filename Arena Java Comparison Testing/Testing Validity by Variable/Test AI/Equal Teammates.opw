@@ -1,0 +1,28 @@
+[RESOURCES]
+Specialist
+Attention
+[VARIABLES]
+Process_Recordkeeping.NumberIn
+Process_Recordkeeping.NumberOut
+Process_Directive_Courtesy_2.NumberIn
+Process_Directive_Courtesy_1.NumberIn
+Process_Directive_Courtesy_2.NumberOut
+Process_Directive_Courtesy_1.NumberOut
+Communications.NumberOut
+Process_DOB.NumberOut
+Process_DOB.NumberIn
+Process_CLEAR.NumberOut
+OK.NumberOut
+Process_OK.NumberOut
+Process_CLEAR.NumberIn
+Dispose 1.NumberOut
+Dispatch seize resource.NumberOut
+DOB.NumberOut
+CLEAR.NumberOut
+Process_OK.NumberIn
+Process_Communications.NumberIn
+Process_Communications.NumberOut
+Dispatch seize resource.NumberIn
+Recordkeeping.NumberOut
+Directive_Courtesy_2.NumberOut
+Directive_Courtesy_1.NumberOut
