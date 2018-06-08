@@ -1,0 +1,10 @@
+This folder contains raw and manipulated data describing the tasks of an airline dispatcher organized by dispatching shfit. 
+
+'RLSinterarrivalTimes.csv' files contain the time between a release task for all of the dispatchers working during each shift. 
+
+'FlightData.csv' files contain the total number of flights for each desk, as well as the number of short and long
+haul flights out of this total, and the number of flights that departed during the shift (i.e. the number of flights
+that the dispatcher must follow) out of the total number of flights. 
+
+A summary of this data can be seen in the 'DistributionsbyShift.csv' files, which contains the summary distributions of 
+the release interarrival times, the number of long haul flights, and the number of departed flights during each shift.
