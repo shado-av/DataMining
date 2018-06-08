@@ -29,7 +29,7 @@ flightLength=flightInfo.MILES;
 result_cell = {};
 
 fileID1 = fopen('DistributionsByShift.csv', 'w');
-
+fprintf(fileID1, 'Shift, Release Interarrival Times, Number Long Haul Flights, Number Flights Follwing\n');
 AMtimes = [];
 PMtimes = [];
 MIDtimes = [];
@@ -76,7 +76,7 @@ end
 
 xlswrite('RLSInterarrivalTimes_AM.xlsx', AMtimes);
 [error_AM,dist_AM,fig_AM,v_AM]=DistributionFitter('Release','Morning Shift', round(AMtimes));
-fprintf(fileID1,'Morning Shifts, %s\n',dist_AM);
+
 print('Release Interrarrival Times (AM)','-djpeg')
 
 
@@ -119,7 +119,7 @@ end
 
 xlswrite('RLSInterarrivalTimes_PM.xlsx', PMtimes);
 [error_PM,dist_PM,fig_PM,v_PM]=DistributionFitter('Release','Afternoon Shift', round(PMtimes));
-fprintf(fileID1,'Aftermoon Shifts, %s\n',dist_PM);
+
 print('Release Interrarrival Times (PM)','-djpeg')
 
 for desk_num = 1 : MIDdesks_num
@@ -151,7 +151,7 @@ end
 
 xlswrite('RLSInterarrivalTimes_Overnight.xlsx', MIDtimes);
 [error_MID,dist_MID,fig_MID,v_MID]=DistributionFitter('Release','Overnight Shift', round(MIDtimes));
-fprintf(fileID1,'Overnight Shifts, %s\n',dist_MID);
+
 print('Release Interrarrival Times (Overnight)','-djpeg')
 
 %% To get Number of Flight Departures per shift
@@ -223,21 +223,20 @@ fprintf(fileID2,'Total Flights, Number Long Haul, Number Short Haul, Number Depa
 for i=1:AMdesks_num
     fprintf(fileID2,'%d,%d,%d, %d\n', AM_numFlights(i), AM_longHaul(i),AM_shortHaul(i), AMdep_num(i));
 end
-fprintf(fileID2,'\n ,%s,,%s \n',dist_AM_H, dist_AM_dep);
+
 fprintf(fileID3,'Total Flights, Number Long Haul, Number Short Haul, Number Departed\n');
 for i=1:PMdesks_num
     fprintf(fileID3,'%d,%d,%d,%d\n', PM_numFlights(i), PM_longHaul(i),PM_shortHaul(i), PMdep_num(i));
 end
-fprintf(fileID3,'\n ,%s,,%s \n',dist_PM_H, dist_PM_dep);
+
 fprintf(fileID4,'Total Flights, Number Long Haul, Number Short Haul, Number Departed\n');
 for i=1:MIDdesks_num
     fprintf(fileID4,'%d,%d,%d,%d\n', MID_numFlights(i), MID_longHaul(i),MID_shortHaul(i), MIDdep_num(i));
 end
-fprintf(fileID4,'\n ,%s,,%s \n',dist_MID_H, dist_MID_dep);
 
 
+fprintf(fileID1,'Morning Shifts, %s,%s,%s\n',dist_AM,dist_AM_H, dist_AM_dep);
 
+fprintf(fileID1,'Aftermoon Shifts, %s,%s,%s\n',dist_PM,dist_PM_H, dist_PM_dep);
 
-
-
-
+fprintf(fileID1,'Overnight Shifts, %s,%s,%s\n',dist_MID,dist_MID_H, dist_MID_dep);
