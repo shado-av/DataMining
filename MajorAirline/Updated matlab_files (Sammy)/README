@@ -22,7 +22,8 @@ DistributionFitter.m
 
 ----------------------------------------------------------------------------------------------
 
-Includes folders that contain both the data extracted from the original spreadsheet and the histograms plotted with
-the best fit model for each data set in the data folder.
+Includes folders that contain both the data extracted from the original spreadsheet and the histograms plotted with the best fit model for each data set in the data folder.
 
 Includes a .csv file that lists the best fit distributions for each task by desk number. 
+
+To find summary distributions specific to shift time of day, see 'OrganizedByShift' folder. 
