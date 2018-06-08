@@ -36,5 +36,3 @@ Total Flights, Number Long Haul, Number Short Haul, Number Departed
 34,19,15,8
 34,12,22,6
 30,0,30,7
-
- ,Exponential(12),,Triangular(0;10;27) 

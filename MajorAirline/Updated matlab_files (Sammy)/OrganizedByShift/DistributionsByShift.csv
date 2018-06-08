@@ -1,3 +1,4 @@
-Morning Shifts, Exponential(8.6999)
-Aftermoon Shifts, Exponential(9.9681)
-Overnight Shifts, Exponential(7.1432)
+Shift, Release Interarrival Times, Number Long Haul Flights, Number Flights Follwing
+Morning Shifts, Exponential(8.6999),Exponential(19.5128),Lognormal(3.191;0.29167)
+Aftermoon Shifts, Exponential(9.9681),Exponential(12),Triangular(0;10;27)
+Overnight Shifts, Exponential(7.1432),Lognormal(3.1221;0.26439),Triangular(7;7;12)
