@@ -13,11 +13,16 @@ AirlineDataMining.m
 ----------------------------------------------------------------------------------------------
 
 DistributionFitter.m
-- Matlab function which takes in a discrete (integer only) data set as an array, a task type string, and a desk number string
+- Matlab function which takes in a discrete (integer only) data set as a vector, a task type string, and a desk number string
 - Calculates the 4 distributions: uniform, triangular, exponential, and lognormal and the standard error of each
 - Compares the standard error of each distribution and chooses best fit distribution based on the lowest error
 - Outputs error, distribution, histogram figure, and valid (boolean)
 - Valid will be 1 unless there are less than 5 data points, such that the distribution will be considered invalid (v=0)
+- parameters returned for each distribution:
+triangular (min, mode, max)
+uniform (min, max)
+lognormal (log mean, log standard deviation)    *NOTE: can be transformed to mean and variance using lognstat function
+exponental (mean)
 
 
 ----------------------------------------------------------------------------------------------
